@@ -18,8 +18,8 @@ Outlier Removal
 
 Scaling
 
-    Standardized numeric features (Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Stock_Amazon',
-       'Stock_Apple', 'Stock_Facebook', 'Stock_Google', 'Stock_Netflix',
+    Standardized numeric features (Open', 'High', 'Low', 'Close', market_cap, pe_ratio, eps, debt_to_equity,
+    price_to_book_ratio, 'Volume', Ticker_AMZN, Ticker_AAPL, Ticker_META, Ticker_GOOGL, Ticker_NFLX
        'year_encoded', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5',
        'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11',
        'month_12', 'day_of_week_Friday', 'day_of_week_Monday',
@@ -57,8 +57,8 @@ Feature engineering aimed to enhance model performance by creating and selecting
 Feature Selection
 
     Selected predictors based on domain knowledge and correlation analysis:
-       Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume', 'Stock_Amazon',
-       'Stock_Apple', 'Stock_Facebook', 'Stock_Google', 'Stock_Netflix',
+       Open', 'High', 'Low', 'Close', market_cap, pe_ratio, eps, debt_to_equity,
+    price_to_book_ratio, 'Volume', Ticker_AMZN, Ticker_AAPL, Ticker_META, Ticker_GOOGL, Ticker_NFLX
        'year_encoded', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5',
        'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11',
        'month_12', 'day_of_week_Friday', 'day_of_week_Monday',
@@ -67,8 +67,7 @@ Feature Selection
 Feature Creation
 
     Extracted Day_of_Week from the Date column to capture weekly trends.
-    Used one-hot encoding to represent stock Company ( 'Stock_Amazon',
-       'Stock_Apple', 'Stock_Facebook', 'Stock_Google', 'Stock_Netflix').
+    Used one-hot encoding to represent stock Company ( 'Ticker_AMZN, Ticker_AAPL, Ticker_META, Ticker_GOOGL, Ticker_NFLX').
 
 Correlation Insights
 
